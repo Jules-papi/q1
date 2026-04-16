@@ -1,0 +1,81 @@
+/* App-specific styles */
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Hero Section specific */
+.hero-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+}
+
+.hero-content {
+  max-width: 1200px;
+}
+
+/* Philosophy Section */
+.philosophy-section {
+  position: relative;
+}
+
+/* Craftsmanship Section */
+.craftsmanship-section {
+  overflow-x: hidden;
+}
+
+.craftsmanship-feature {
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.craftsmanship-feature:hover {
+  border-color: #000;
+  transform: translateY(-5px);
+}
+
+/* Collection Section */
+.collection-item {
+  cursor: pointer;
+}
+
+.collection-item:hover .collection-image-wrapper {
+  transform: scale(1.02);
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* CTA Section */
+.cta-section {
+  background: #fafafa;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+  
+  .text-huge {
+    font-size: clamp(3rem, 18vw, 8rem);
+  }
+  
+  .text-large {
+    font-size: clamp(1.5rem, 5vw, 3rem);
+  }
+}
+
+/* Accessibility - reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
