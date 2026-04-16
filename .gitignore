@@ -23,7 +23,7 @@ htmlcov/
 # Logs
 *.log
 
-# Python cache (if any Python files exist in project)
+# Python cache
 __pycache__/
 *.pyc
 *.pyo
@@ -32,33 +32,11 @@ __pycache__/
 # Testing
 .pytest_cache/
 .mypy_cache/
-.coverage
 
 # OS generated files
 .DS_Store
 Thumbs.db
 
-# Compressed files
-*.zip
-*.gz
-*.tar
-*.tgz
-*.bz2
-*.xz
-*.7z
-*.rar
-*.zst
-*.lz4
-*.lzh
-*.cab
-*.arj
-*.rpm
-*.deb
-*.Z
-*.lz
-*.lzo
-*.tar.gz
-*.tar.bz2
-*.tar.xz
-*.tar.zst
+# Package manager
+package-lock.json
 ```
