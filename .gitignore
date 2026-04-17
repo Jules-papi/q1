@@ -6,15 +6,21 @@ node_modules/
 dist/
 build/
 .next/
+out/
 
 # Environment variables
 .env
 .env.local
 .env.*
 
-# IDE specific
+# IDE files
 .vscode/
 .idea/
+*.swp
+*.swo
+
+# Logs
+*.log
 
 # Python cache (if any Python files exist in project)
 __pycache__/
@@ -22,10 +28,37 @@ __pycache__/
 *.pyo
 *.pyd
 
-# Logs
-*.log
+# Temporary files
+*.tmp
+*.temp
 
 # OS generated files
 .DS_Store
 Thumbs.db
+
+# Coverage reports
+coverage/
+htmlcov/
+.coverage
+
+# Testing
+.nyc_output/
+test-results/
+junit.xml
+
+# Package manager caches
+.yarn/
+.pnpm-store/
+.npm/
+
+# Compiled assets
+*.min.js
+*.min.css
+*.bundle.js
+*.bundle.css
+
+# Lock files (already in your package.json workflow)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
 ```
